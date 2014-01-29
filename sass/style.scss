@@ -1,0 +1,11 @@
+@import '_donut-chart.scss';
+
+
+// Create Charts
+@include donut-chart('chart1', 67, 300px, 25px, 1s, #e1e1e1, #fff, #48b2c1);
+
+@include donut-chart('chart2', 37, 200px, 15px, 2s, #e1e1e1, #fff, #f26a4a);
+
+@include donut-chart('chart3', 17, 150px, 10px, 1.5s, #e1e1e1, #fff, #353535);
+
+@include donut-chart('chart4', 43, 250px, 40px, .5s, #e1e1e1, #fff, #50C690);

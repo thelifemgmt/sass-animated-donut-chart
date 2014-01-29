@@ -1,0 +1,758 @@
+/*********************************
+Sass Animated Donut Chart Mixin
+Written by: Sean Stopnik
+Email: thelifemgmt@gmail.com
+*********************************/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: transform3d(0, 0, 0);
+  transform: transform3d(0, 0, 0);
+}
+
+.donut-chart {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.donut-chart .quad {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.donut-chart .chart-center {
+  position: absolute;
+  border-radius: 50%;
+}
+.donut-chart .chart-center span {
+  display: block;
+  text-align: center;
+}
+
+@-webkit-keyframes chart1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(241.2deg);
+    transform: rotate(241.2deg);
+  }
+}
+
+@keyframes chart1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(241.2deg);
+    transform: rotate(241.2deg);
+  }
+}
+
+@-webkit-keyframes chartRotate2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes chartRotate2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+
+@-webkit-keyframes chartRotate3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes chartRotate3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+@-webkit-keyframes chartRotate4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+}
+
+@keyframes chartRotate4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+}
+
+@-webkit-keyframes chartCover {
+  0%, 90% {
+    opacity: 1;
+  }
+
+  91%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes chartCover {
+  0%, 90% {
+    opacity: 1;
+  }
+
+  91%, 100% {
+    opacity: 0;
+  }
+}
+
+.donut-chart.chart1 {
+  width: 300px;
+  height: 300px;
+  background: #e1e1e1;
+}
+.donut-chart.chart1 .quad {
+  width: 150px;
+  height: 150px;
+  top: 0;
+  left: 0;
+  border-radius: 100% 0 0 0;
+  -webkit-transform-origin: bottom right;
+  transform-origin: bottom right;
+  display: none;
+}
+.donut-chart.chart1 .quad.one {
+  -webkit-transform: rotate(241.2deg);
+  transform: rotate(241.2deg);
+  background: #48b2c1;
+  -webkit-animation: chart1 1s linear;
+  animation: chart1 1s linear;
+  display: block;
+}
+.donut-chart.chart1 .quad.two {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  background: #48b2c1;
+  -webkit-animation: chartRotate2 1s linear;
+  animation: chartRotate2 1s linear;
+  display: block;
+}
+.donut-chart.chart1 .quad.three {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  background: #48b2c1;
+  -webkit-animation: chartRotate3 1s linear;
+  animation: chartRotate3 1s linear;
+  display: block;
+}
+.donut-chart.chart1 .quad.four {
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+  background: #48b2c1;
+  -webkit-animation: chartRotate4 1s linear;
+  animation: chartRotate4 1s linear;
+}
+.donut-chart.chart1 .quad.top {
+  display: block;
+  background: #e1e1e1;
+}
+.donut-chart.chart1 .chart-center {
+  top: 25px;
+  left: 25px;
+  width: 250px;
+  height: 250px;
+  background: white;
+}
+.donut-chart.chart1 .chart-center:after {
+  display: inline-block;
+  width: 100%;
+  font-size: 60px;
+  color: #48b2c1;
+  text-align: center;
+  line-height: 250px;
+  content: "67%";
+}
+
+@-webkit-keyframes chart2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(133.2deg);
+    transform: rotate(133.2deg);
+  }
+}
+
+@keyframes chart2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(133.2deg);
+    transform: rotate(133.2deg);
+  }
+}
+
+@-webkit-keyframes chartRotate2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes chartRotate2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+
+@-webkit-keyframes chartRotate3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes chartRotate3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+@-webkit-keyframes chartRotate4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+}
+
+@keyframes chartRotate4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+}
+
+@-webkit-keyframes chartCover {
+  0%, 90% {
+    opacity: 1;
+  }
+
+  91%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes chartCover {
+  0%, 90% {
+    opacity: 1;
+  }
+
+  91%, 100% {
+    opacity: 0;
+  }
+}
+
+.donut-chart.chart2 {
+  width: 200px;
+  height: 200px;
+  background: #e1e1e1;
+}
+.donut-chart.chart2 .quad {
+  width: 100px;
+  height: 100px;
+  top: 0;
+  left: 0;
+  border-radius: 100% 0 0 0;
+  -webkit-transform-origin: bottom right;
+  transform-origin: bottom right;
+  display: none;
+}
+.donut-chart.chart2 .quad.one {
+  -webkit-transform: rotate(133.2deg);
+  transform: rotate(133.2deg);
+  background: #f26a4a;
+  -webkit-animation: chart2 2s linear;
+  animation: chart2 2s linear;
+  display: block;
+}
+.donut-chart.chart2 .quad.two {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  background: #f26a4a;
+  -webkit-animation: chartRotate2 2s linear;
+  animation: chartRotate2 2s linear;
+  display: block;
+}
+.donut-chart.chart2 .quad.three {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  background: #f26a4a;
+  -webkit-animation: chartRotate3 2s linear;
+  animation: chartRotate3 2s linear;
+}
+.donut-chart.chart2 .quad.four {
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+  background: #f26a4a;
+  -webkit-animation: chartRotate4 2s linear;
+  animation: chartRotate4 2s linear;
+}
+.donut-chart.chart2 .quad.top {
+  display: block;
+  background: #e1e1e1;
+}
+.donut-chart.chart2 .chart-center {
+  top: 15px;
+  left: 15px;
+  width: 170px;
+  height: 170px;
+  background: white;
+}
+.donut-chart.chart2 .chart-center:after {
+  display: inline-block;
+  width: 100%;
+  font-size: 40px;
+  color: #f26a4a;
+  text-align: center;
+  line-height: 170px;
+  content: "37%";
+}
+
+@-webkit-keyframes chart3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(61.2deg);
+    transform: rotate(61.2deg);
+  }
+}
+
+@keyframes chart3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(61.2deg);
+    transform: rotate(61.2deg);
+  }
+}
+
+@-webkit-keyframes chartRotate2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes chartRotate2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+
+@-webkit-keyframes chartRotate3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes chartRotate3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+@-webkit-keyframes chartRotate4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+}
+
+@keyframes chartRotate4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+}
+
+@-webkit-keyframes chartCover {
+  0%, 90% {
+    opacity: 1;
+  }
+
+  91%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes chartCover {
+  0%, 90% {
+    opacity: 1;
+  }
+
+  91%, 100% {
+    opacity: 0;
+  }
+}
+
+.donut-chart.chart3 {
+  width: 150px;
+  height: 150px;
+  background: #e1e1e1;
+}
+.donut-chart.chart3 .quad {
+  width: 75px;
+  height: 75px;
+  top: 0;
+  left: 0;
+  border-radius: 100% 0 0 0;
+  -webkit-transform-origin: bottom right;
+  transform-origin: bottom right;
+  display: none;
+}
+.donut-chart.chart3 .quad.one {
+  -webkit-transform: rotate(61.2deg);
+  transform: rotate(61.2deg);
+  background: #353535;
+  -webkit-animation: chart3 1.5s linear;
+  animation: chart3 1.5s linear;
+  display: block;
+}
+.donut-chart.chart3 .quad.two {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  background: #353535;
+  -webkit-animation: chartRotate2 1.5s linear;
+  animation: chartRotate2 1.5s linear;
+}
+.donut-chart.chart3 .quad.three {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  background: #353535;
+  -webkit-animation: chartRotate3 1.5s linear;
+  animation: chartRotate3 1.5s linear;
+}
+.donut-chart.chart3 .quad.four {
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+  background: #353535;
+  -webkit-animation: chartRotate4 1.5s linear;
+  animation: chartRotate4 1.5s linear;
+}
+.donut-chart.chart3 .quad.top {
+  display: block;
+  background: #e1e1e1;
+}
+.donut-chart.chart3 .chart-center {
+  top: 10px;
+  left: 10px;
+  width: 130px;
+  height: 130px;
+  background: white;
+}
+.donut-chart.chart3 .chart-center:after {
+  display: inline-block;
+  width: 100%;
+  font-size: 30px;
+  color: #353535;
+  text-align: center;
+  line-height: 130px;
+  content: "17%";
+}
+
+@-webkit-keyframes chart4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(154.8deg);
+    transform: rotate(154.8deg);
+  }
+}
+
+@keyframes chart4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(154.8deg);
+    transform: rotate(154.8deg);
+  }
+}
+
+@-webkit-keyframes chartRotate2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes chartRotate2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+
+@-webkit-keyframes chartRotate3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes chartRotate3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+@-webkit-keyframes chartRotate4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+}
+
+@keyframes chartRotate4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+}
+
+@-webkit-keyframes chartCover {
+  0%, 90% {
+    opacity: 1;
+  }
+
+  91%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes chartCover {
+  0%, 90% {
+    opacity: 1;
+  }
+
+  91%, 100% {
+    opacity: 0;
+  }
+}
+
+.donut-chart.chart4 {
+  width: 250px;
+  height: 250px;
+  background: #e1e1e1;
+}
+.donut-chart.chart4 .quad {
+  width: 125px;
+  height: 125px;
+  top: 0;
+  left: 0;
+  border-radius: 100% 0 0 0;
+  -webkit-transform-origin: bottom right;
+  transform-origin: bottom right;
+  display: none;
+}
+.donut-chart.chart4 .quad.one {
+  -webkit-transform: rotate(154.8deg);
+  transform: rotate(154.8deg);
+  background: #50c690;
+  -webkit-animation: chart4 0.5s linear;
+  animation: chart4 0.5s linear;
+  display: block;
+}
+.donut-chart.chart4 .quad.two {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  background: #50c690;
+  -webkit-animation: chartRotate2 0.5s linear;
+  animation: chartRotate2 0.5s linear;
+  display: block;
+}
+.donut-chart.chart4 .quad.three {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  background: #50c690;
+  -webkit-animation: chartRotate3 0.5s linear;
+  animation: chartRotate3 0.5s linear;
+}
+.donut-chart.chart4 .quad.four {
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+  background: #50c690;
+  -webkit-animation: chartRotate4 0.5s linear;
+  animation: chartRotate4 0.5s linear;
+}
+.donut-chart.chart4 .quad.top {
+  display: block;
+  background: #e1e1e1;
+}
+.donut-chart.chart4 .chart-center {
+  top: 40px;
+  left: 40px;
+  width: 170px;
+  height: 170px;
+  background: white;
+}
+.donut-chart.chart4 .chart-center:after {
+  display: inline-block;
+  width: 100%;
+  font-size: 50px;
+  color: #50c690;
+  text-align: center;
+  line-height: 170px;
+  content: "43%";
+}
